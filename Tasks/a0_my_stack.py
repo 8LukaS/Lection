@@ -3,25 +3,25 @@ My little Stack
 """
 from typing import Any
 
-
+stack =[ ] # переменная стека
 def push(elem: Any) -> None:
 	"""
 	Operation that add element to stack
-
 	:param elem: element to be pushed
 	:return: Nothing
 	"""
-	print(elem)
-	return None
+	print('Добавили элемент в стек', elem)
+	global stack
+	return stack.append(elem)
 
 
 def pop() -> Any:
 	"""
 	Pop element from the top of the stack. If not elements - should return None.
-
 	:return: popped element
 	"""
-	return None
+	global stack
+	return stack.pop([-1])
 
 
 def peek(ind: int = 0) -> Any:
@@ -32,6 +32,7 @@ def peek(ind: int = 0) -> Any:
 	:return: peeked element or None if no element in this place
 	"""
 	print(ind)
+	global stack
 	return None
 
 
@@ -41,4 +42,9 @@ def clear() -> None:
 
 	:return: None
 	"""
+	global stack
+	stack.clear()
 	return None
+
+if __name == "__main__":
+	push()
