@@ -16,11 +16,11 @@ def sort(container: Collection[_Tt]) -> Collection[_Tt]:
 		middle =len(container) // 2
 		print ('-------------------------')
 		print('Commit split')
-		print('left container:',container[:middle])
-		print('right container:', container[middle:])
-		print('Split left contfiner:')
+		print('left conteiner:',container[:middle])
+		print('right conteiner:', container[middle:])
+		print('Split left conteiner:')
 		left_container = sort(container [:middle])
-		print('Split left contfiner:')
+		print('Split left conteiner:')
 		right_container = sort(container[middle:])
 
 	print('merge',left_container,right_container)
