@@ -3,7 +3,7 @@ My little Stack
 """
 from typing import Any
 
-stack =[ ] # переменная стека
+stack =[] # переменная стека
 def push(elem: Any) -> None:
 	"""
 	Operation that add element to stack
@@ -46,5 +46,5 @@ def clear() -> None:
 	stack.clear()
 	return None
 
-if __name == "__main__":
+if __name__ == "__main__":
 	push()
